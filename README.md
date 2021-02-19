@@ -44,47 +44,25 @@ The `escapeHtml` function is designed to accept a string input of text and
 return an escaped value to interpolate into HTML.
 
 ```js
-var escapeHtml = require("es-escape-html");
+import { escapeHtml } from "es-escape-html";
 
-// example values
-var desc = "I <b>think</b> this is good.";
-var fullName = 'John "Johnny" Smith';
+// Example values
+const desc = "I <b>think</b> this is good.";
+const fullName = 'John "Johnny" Smith';
 
-// example passing in text into a html attribute
-console.dir('<input name="full_name" value="' + escapeHtml(fullName) + '">');
+// Example passing in text into a html attribute
+console.dir(`<input name="full_name" value="${escapeHtml(fullName)}" />`);
 // -> '<input name="full_name" value="John &quot;Johnny&quot; Smith">'
 
-// example passing in text in html body
-console.dir('<textarea name="desc">' + escapeHtml(desc) + "</textarea>");
+// Example passing in text in html body
+console.dir(`<textarea name="desc">${escapeHtml(desc)}</textarea>`);
 // -> '<textarea name="desc">I &lt;b&gt;think&lt;/b&gt; this is good.</textarea>'
 ```
 
-## Benchmark
+## Todo
 
-```
-$ npm run-script bench
-
-> es-escape-html@1.0.3 bench nodejs-es-escape-html
-> node benchmark/index.js
-
-
-  http_parser@1.0
-  node@0.10.33
-  v8@3.14.5.9
-  ares@1.9.0-DEV
-  uv@0.10.29
-  zlib@1.2.3
-  modules@11
-  openssl@1.0.1j
-
-  1 test completed.
-  2 tests completed.
-  3 tests completed.
-
-  no special characters    x 19,435,271 ops/sec ±0.85% (187 runs sampled)
-  single special character x  6,132,421 ops/sec ±0.67% (194 runs sampled)
-  many special characters  x  3,175,826 ops/sec ±0.65% (193 runs sampled)
-```
+- Reimplement testing from [component/escape-html](https://github.com/component/escape-html/tree/master/test)
+- Reimplement benchmarks from [component/escape-html](https://github.com/component/escape-html/tree/master/benchmark)
 
 ## License
 
