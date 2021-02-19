@@ -1,11 +1,9 @@
-# escape-html
+# es-escape-html
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
 
-  Escape string for use in HTML
+Escape string for use in HTML
 
 This module exports a single function, `escapeHtml`, that is used to escape
 a string of content such that it can be interpolated in HTML content.
@@ -17,7 +15,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```bash
-$ npm install escape-html
+$ npm install es-escape-html
 ```
 
 ## API
@@ -46,18 +44,18 @@ The `escapeHtml` function is designed to accept a string input of text and
 return an escaped value to interpolate into HTML.
 
 ```js
-var escapeHtml = require('escape-html')
+var escapeHtml = require("es-escape-html");
 
 // example values
-var desc = 'I <b>think</b> this is good.'
-var fullName = 'John "Johnny" Smith'
+var desc = "I <b>think</b> this is good.";
+var fullName = 'John "Johnny" Smith';
 
 // example passing in text into a html attribute
-console.dir('<input name="full_name" value="' + escapeHtml(fullName) + '">')
+console.dir('<input name="full_name" value="' + escapeHtml(fullName) + '">');
 // -> '<input name="full_name" value="John &quot;Johnny&quot; Smith">'
 
 // example passing in text in html body
-console.dir('<textarea name="desc">' + escapeHtml(desc) + '</textarea>')
+console.dir('<textarea name="desc">' + escapeHtml(desc) + "</textarea>");
 // -> '<textarea name="desc">I &lt;b&gt;think&lt;/b&gt; this is good.</textarea>'
 ```
 
@@ -66,7 +64,7 @@ console.dir('<textarea name="desc">' + escapeHtml(desc) + '</textarea>')
 ```
 $ npm run-script bench
 
-> escape-html@1.0.3 bench nodejs-escape-html
+> es-escape-html@1.0.3 bench nodejs-es-escape-html
 > node benchmark/index.js
 
 
@@ -92,10 +90,10 @@ $ npm run-script bench
 
 [MIT](LICENSE)
 
-[coveralls-image]: https://badgen.net/coveralls/c/github/component/escape-html/master
-[coveralls-url]: https://coveralls.io/r/component/escape-html?branch=master
-[npm-downloads-image]: https://badgen.net/npm/dm/escape-html
-[npm-url]: https://npmjs.org/package/escape-html
-[npm-version-image]: https://badgen.net/npm/v/escape-html
-[travis-image]: https://badgen.net/travis/component/escape-html/master
-[travis-url]: https://travis-ci.org/component/escape-html
+[coveralls-image]: https://badgen.net/coveralls/c/github/component/es-escape-html/master
+[coveralls-url]: https://coveralls.io/r/component/es-escape-html?branch=master
+[npm-downloads-image]: https://badgen.net/npm/dm/es-escape-html
+[npm-url]: https://npmjs.org/package/es-escape-html
+[npm-version-image]: https://badgen.net/npm/v/es-escape-html
+[travis-image]: https://badgen.net/travis/component/es-escape-html/master
+[travis-url]: https://travis-ci.org/component/es-escape-html
