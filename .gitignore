@@ -1,7 +1,4 @@
-.nyc_output
-build
-components
-coverage
+dist
 node_modules
-npm-debug.log
+*.log
 package-lock.json
