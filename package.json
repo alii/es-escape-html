@@ -1,7 +1,7 @@
 {
   "name": "es-escape-html",
   "description": "es-escape-html rewrite for ESM",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.js",
