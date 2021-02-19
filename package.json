@@ -1,7 +1,7 @@
 {
   "name": "es-escape-html",
   "description": "es-escape-html rewrite for ESM",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "src/index.js",
   "module": "src/index.js",
@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/alii/es-escape-html/issues"
   },
-  "homepage": "https://github.com/alii/es-escape-html/es-vary#readme",
+  "homepage": "https://github.com/alii/es-escape-html/es-escape-html#readme",
   "devDependencies": {
     "@types/node": "^14.14.11",
     "eslint": "^7.20.0",
