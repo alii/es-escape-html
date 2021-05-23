@@ -3,22 +3,16 @@
   "description": "es-escape-html rewrite for ESM",
   "version": "0.0.4",
   "type": "module",
-  "main": "src/index.js",
-  "module": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": "./src/index.js",
   "engines": {
     "node": ">=12.x"
   },
   "files": [
     "src"
   ],
-  "exports": {
-    ".": {
-      "import": "./src/index.js"
-    },
-    "./package.json": "./package.json",
-    "./": "./"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alii/es-escape-html.git"

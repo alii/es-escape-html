@@ -16,7 +16,7 @@ const matchHtmlRegExp = /["'&<>]/;
  * @return {string}
  * @public
  */
-export function escapeHtml(string) {
+export function escapeHTML(string) {
   const match = matchHtmlRegExp.exec(str);
 
   if (!match) {
