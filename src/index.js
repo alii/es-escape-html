@@ -12,11 +12,11 @@ const matchHtmlRegExp = /["'&<>]/;
  * *Note* when using the escaped value within a tag, it is only suitable as the value of an attribute,
  * where the value is quoted with either a double quote character (`"`) or a single quote character (`'`).
  *
- * @param {string} string The string to escape for inserting into HTML
+ * @param {string} str The string to escape for inserting into HTML
  * @return {string}
  * @public
  */
-export function escapeHTML(string) {
+export function escapeHTML(str) {
   const match = matchHtmlRegExp.exec(str);
 
   if (!match) {
