@@ -1,10 +1,8 @@
 {
   "name": "es-escape-html",
   "description": "es-escape-html rewrite for ESM",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "type": "module",
-  "main": "./src/index.js",
-  "module": "./src/index.js",
   "types": "./src/index.d.ts",
   "exports": "./src/index.js",
   "engines": {
